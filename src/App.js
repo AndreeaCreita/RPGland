@@ -1,6 +1,7 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
+import { redirect } from "react-router-dom";
+import { useAuthContext } from "./hooks/useAuthContext";
 //styles
 import "./App.css";
 
@@ -12,47 +13,39 @@ import Signup from "./pages/signup/Signup"
 import Project from "./pages/project/Project"
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-
+import OnlineUsers from './components/OnlineUsers'
 
 
 function App() {
+  const { authIsReady, user } = useAuthContext()
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <Sidebar />
-        <div className="container">
-          <Navbar />
-          <Routes>
+      {authIsReady && (
+        <BrowserRouter>
+          {user && <OnlineUsers />}
+          
+          <div className="container">
+            <Navbar />
+            <Routes>
 
-            <Route exact path="/" element={<Dashboard />} />
+              <Route exact path="/" element={ !user && <Navigate to="/login" replace /> || user && <Dashboard />  } />
+              
 
-            <Route path="/create" element={<Create />} />
+              <Route path="/create" element={ !user && <Navigate to="/login" replace /> || user && <Create />    } />
 
-            <Route path="/projects/:id" element={<Project />} />
+              <Route path="/projects/:id" element={ !user && <Navigate to="/login" replace /> || user && <Project />    } />
 
-            <Route path="/login" element={<Login />} />
+              <Route path="/login" element={ user && <Navigate to="/" replace /> || !user && <Login />} />
 
-            <Route path="/signup" element={<Signup />} />
+              <Route path="/signup" element={  user && <Navigate to="/" replace /> || !user && <Signup />} />
 
-            {/* <Route path = "/create">
-              <Create />
-            </Route>
 
-            <Route path = "/projects/:id">
-              <Project />
-            </Route>
-
-            <Route path = "/login">
-              <Login />
-            </Route>
-
-            <Route path = "/signup">
-              <Signup />
-            </Route> */}
-
-          </Routes> 
-        </div>
-      </BrowserRouter>
+            </Routes> 
+          </div>
+          {user && <Sidebar />}
+        </BrowserRouter>
+      )}
     </div>
 
   );
