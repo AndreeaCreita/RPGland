@@ -12,6 +12,7 @@
 }
 .navbar .logo {
   font-weight: bold;
+  font-size: 160%;
   color: var(--heading-color);
   letter-spacing: 1px;
   display: flex;
@@ -21,11 +22,12 @@
 .navbar .logo img {
   margin-right: 10px;
   filter: invert(25%);
-  width: 36px;
+  width: 56px;
   margin-top: -8px;
 }
 .navbar a {
-  color: #333;
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
   margin-right: 20px;
 }

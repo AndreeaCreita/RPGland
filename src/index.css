@@ -2,11 +2,12 @@
 
 /* variables */
 :root {
-  --heading-color: #444;
+  --heading-color: #cb85bd;
   --text-color: #999;
-  --primary-color: #8d69f1;
-  --highlight-color: #d13267;
+  --primary-color: #7d598f;
+  --highlight-color: #d65480;
   --bg-color: #f4f4f4;
+  
 }
 
 /* base styles */
@@ -29,9 +30,11 @@ ul {
   font-size: 1em;
   color: var(--heading-color);
   display: inline-block;
+  
 }
 .btn {
-  background: #fff;
+  background: #f09be1;
+  font-weight: bold;
   padding: 8px 12px;
   border-radius: 4px;
   color: var(--primary-color);
@@ -42,6 +45,7 @@ ul {
 .btn:hover {
   color: #fff;
   background-color: var(--primary-color);
+  
 }
 
 /* forms */

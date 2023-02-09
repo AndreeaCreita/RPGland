@@ -6,6 +6,7 @@
   box-sizing: border-box;
   position: relative;
   color: #fff;
+  font-size: 120%;
 }
 .sidebar-content {
   position: fixed;
@@ -31,6 +32,7 @@
   text-decoration: none;
   width: 100%;
   color: #fff;
+  font-weight: bold;
   box-sizing: border-box;
 }
 .sidebar .links img {
