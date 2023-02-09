@@ -60,10 +60,10 @@ label span {
 input, textarea {
   padding: 8px 6px;
   font-size: 1em;
-  color: #777;
+  color: #530303;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #ddd;
+  border: 1px solid #a63fa6;
   border-radius: 4px;
 }
 textarea {
