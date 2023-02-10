@@ -45,7 +45,7 @@ export default function Dashboard() {
 
   return (
     <div>
-      <h2 className="page-title">Dashboard</h2>
+      <h2 className="page-title">Find something that you like</h2>
       {error && <p className="error">{error}</p>}
       {documents && <ProjectFilter changeFilter={changeFilter} />}
       {projects && <ProjectList projects={projects} />}

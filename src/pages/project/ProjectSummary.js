@@ -21,7 +21,7 @@ export default function ProjectSummary({ project }) {
         <p className="details">
           {project.details}
         </p>
-        <h4>Project assigned to:</h4>
+        <h4>By:</h4>
         <div className="assigned-users">
           {project.assignedUsersList.map(user => (
             <div key={user.id}>
@@ -31,7 +31,7 @@ export default function ProjectSummary({ project }) {
         </div>
       </div>
       {user.uid === project.createdBy.id && (
-        <button className="btn" onClick={handleClick}>Mark as Complete</button>
+        <button className="btn" onClick={handleClick}>Delete</button>
       )}
     </div>
   )
