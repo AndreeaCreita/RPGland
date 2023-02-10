@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
-import { redirect } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
 import { useAuthContext } from "./hooks/useAuthContext";
 //styles
 import "./App.css";
@@ -29,16 +29,16 @@ function App() {
             <Navbar />
             <Routes>
 
-              <Route exact path="/" element={ !user && <Navigate to="/login" replace /> || user && <Dashboard />  } />
+              <Route exact path="/" element={ (!user && <Navigate to="/login" replace />) ||( user && <Dashboard /> ) } />
               
 
-              <Route path="/create" element={ !user && <Navigate to="/login" replace /> || user && <Create />    } />
+              <Route path="/create" element={ (!user && <Navigate to="/login" replace />) || (user && <Create />    )} />
 
-              <Route path="/projects/:id" element={ !user && <Navigate to="/login" replace /> || user && <Project />    } />
+              <Route path="/projects/:id" element={ (!user && <Navigate to="/login" replace />) || (user && <Project /> )   } />
 
-              <Route path="/login" element={ user && <Navigate to="/" replace /> || !user && <Login />} />
+              <Route path="/login" element={ (user && <Navigate to="/" replace />) || (!user && <Login />)} />
 
-              <Route path="/signup" element={  user && <Navigate to="/" replace /> || !user && <Signup />} />
+              <Route path="/signup" element={ ( user && <Navigate to="/" replace />) || (!user && <Signup />)} />
 
 
             </Routes> 
@@ -53,11 +53,3 @@ function App() {
 }
 
 export default App;
-
-/*
-dashboard -> homepage
-login page
-sign up page
-create projects page
-project page  with details
-*/
