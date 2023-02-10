@@ -3,7 +3,7 @@
 Barem de notare proiect: 
 
 - :ballot_box_with_check: Sa aiba mai multe rute  2p
-- :black_square_button: Sa se foloseasca componente reutilizabile 2p - projectList but we'll see
+- :ballot_box_with_check: Sa se foloseasca componente reutilizabile 2p 
 - :ballot_box_with_check: Sa se comunice intre componente 2p
 - :ballot_box_with_check: Rute publice si private 1p
 - :ballot_box_with_check: Sa fie cel putin o pagina cu un form ( login/register) 2p
