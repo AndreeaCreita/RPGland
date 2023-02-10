@@ -31,6 +31,8 @@ Pagina de projects va avea atribuit un id pentru fiecare RPG creat din pagina Cr
  
 - :ballot_box_with_check: Firebase sau orice alt mediu de backend 1p<br>
  Mediul de backend ales este Firebase. <br>
+ ![11](https://user-images.githubusercontent.com/79642095/218218021-56f52d45-36fd-42e4-a87c-bf9939102180.png)
+<br>
  [Config](src/firebase/config.js)
  <br>
  <br>
