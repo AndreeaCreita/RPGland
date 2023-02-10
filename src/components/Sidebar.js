@@ -20,13 +20,13 @@ export default function Sidebar() {
             <li>
               <NavLink exact to="/">
                 <img src={DashboardIcon} alt="dashboard icon" />
-                <span>Dashboard</span>
+                <span>RPG</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="/create">
                 <img src={AddIcon} alt="add project icon" />
-                <span>New Project</span>
+                <span>Create RPG</span>
               </NavLink>
             </li>
           </ul>

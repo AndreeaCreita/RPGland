@@ -4,7 +4,7 @@
 .project-filter nav {
   display: flex;
   padding: 10px;
-  background-color: #fff;
+  background-color: #f1c3f9;
   border-radius: 4px;
 }
 .project-filter p {
@@ -27,3 +27,8 @@
 .project-filter button.active {
   color: var(--primary-color);
 } 
+.project-list a{
+    background-color: #f1d0f6;
+    display: grid;
+    
+}
