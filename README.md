@@ -27,6 +27,10 @@ Pagina de projects va avea atribuit un id pentru fiecare RPG creat din pagina Cr
  
 - :ballot_box_with_check: Sa fie cel putin o pagina cu un form ( login/register) 2p<br>
  Pagini cu formular sunt pagina de [Login](src/pages/login/Login.js), [Sign up](src/pages/signup/Signup.js) si [Create](src/pages/create/Create.js)<br>
+![image](https://user-images.githubusercontent.com/79642095/218218858-0a463e3c-3971-4d08-9ec7-2095b44818f6.png) <br>
+ ![image](https://user-images.githubusercontent.com/79642095/218218758-20114448-1915-4825-9102-332ef8be03bd.png)
+
+
  <br>
  
 - :ballot_box_with_check: Firebase sau orice alt mediu de backend 1p<br>
