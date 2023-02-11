@@ -1,6 +1,9 @@
 # RPGland
 [Demo](https://youtu.be/Qysj-B-ww00)
 <br>
+Log in:<br>
+Username: Ezarel@wizards.com <br>
+Password: 1234567<br>
 Barem de notare proiect: 
 
 - :ballot_box_with_check: Sa aiba mai multe rute  2p <br>
