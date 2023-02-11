@@ -1,5 +1,6 @@
 # RPGland
-
+[Demo](https://youtu.be/Qysj-B-ww00)
+<br>
 Barem de notare proiect: 
 
 - :ballot_box_with_check: Sa aiba mai multe rute  2p <br>
@@ -7,10 +8,13 @@ Barem de notare proiect:
 Pagina de projects va avea atribuit un id pentru fiecare RPG creat din pagina Create. <br>
 [App.js](src/App.js).
 <br>
-
+ ![image](https://user-images.githubusercontent.com/79642095/218222515-dee24ca6-d952-409b-a3d6-1a57fc23ea0b.png)
+ 
 - :ballot_box_with_check: Sa se foloseasca componente reutilizabile 2p <br>
  useCollection in [Dashboard.js](src/pages/dashboard/Dashboard.js), [Create.js](src/pages/create/Create.js)   <br>
  Avatar in [ProjectComments.js](src/pages/project/ProjectComments.js), [ProjectSummary.js](src/pages/project/ProjectSummary.js) <br>
+ ![image](https://user-images.githubusercontent.com/79642095/218222636-6236928e-380d-433b-9593-76ec0db647f5.png)
+
  <br>
  
 - :ballot_box_with_check: Sa se comunice intre componente 2p<br>
@@ -29,6 +33,7 @@ Pagina de projects va avea atribuit un id pentru fiecare RPG creat din pagina Cr
  Pagini cu formular sunt pagina de [Login](src/pages/login/Login.js), [Sign up](src/pages/signup/Signup.js) si [Create](src/pages/create/Create.js)<br>
 ![image](https://user-images.githubusercontent.com/79642095/218218858-0a463e3c-3971-4d08-9ec7-2095b44818f6.png) <br>
  ![image](https://user-images.githubusercontent.com/79642095/218218758-20114448-1915-4825-9102-332ef8be03bd.png)
+![image](https://user-images.githubusercontent.com/79642095/218222581-910012b4-80da-48e5-a37f-9633aa59c078.png)
 
 
  <br>
